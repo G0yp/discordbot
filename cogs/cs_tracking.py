@@ -31,11 +31,12 @@ class cs_tracking(commands.Cog, name="cs_tracking"):
 
         # Don't forget to remove "pass", I added this just because there's no content in the method.
         pass
-    
+
+    @commands.Cog.listener()
     async def on_presence_update(self, before, after):
         """
         Event listener that triggers when a user's presence updates.
-
+        
         :param before: The member's previous state.
         :param after: The member's updated state.
         """
